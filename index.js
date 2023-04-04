@@ -1,13 +1,14 @@
-let sum = (a,b)=>{return a+b};
+const http = require('http');
 
+const port = 4000;
 
-console.log(sum(10,20));
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.end('Ravi Sharma\n');
+});
 
-const Student = {
-    name : 'ravi sharma',
-    age : 23,
-    greet : ()=>{
-        console.log('hello ' + this.name);
-    }
-}
-Student.greet();
+server.listen(port, () => {
+  console.log('Server running at port' + port);
+  console.log('My name is Ravi Sharma.');
+});
