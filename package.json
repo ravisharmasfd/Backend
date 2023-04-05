@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ravisharmasfd/Backend/issues"
   },
-  "homepage": "https://github.com/ravisharmasfd/Backend#readme"
+  "homepage": "https://github.com/ravisharmasfd/Backend#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
